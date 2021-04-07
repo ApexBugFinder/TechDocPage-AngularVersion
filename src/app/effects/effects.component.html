@@ -28,7 +28,7 @@
         <pre>
 
 
-                      <kbd><span class="decoratorStyle">> </span>npm install @ngrx/effects --save</kbd>
+                      <kbd><span class="decoratorStyle">&gt; </span>npm install &#64;ngrx/effects --save</kbd>
 
 
                   </pre>
@@ -43,26 +43,26 @@
                                       <code class="coderBlock">
 
                                         <p>...</p>
-                                        <p> <span class="importStyle">import</span> { <span class="moduleStyle">EffectsModule</span> } from <span class="fileStyle">'@ngrx/effects'</span>;  </p>
+                                        <p> <span class="importStyle">import</span> &#123; <span class="moduleStyle">EffectsModule</span> &#125; from <span class="fileStyle">&#39;&#64;ngrx/effects&#39;</span>&#59;  </p>
 
                                          <br>
                                         <br>
-                                        <p><span class="decoratorStyle">@NgModule</span>({</p>
+                                        <p><span class="decoratorStyle">&#64;NgModule</span>&#40;&#123;</p>
                                             <p>imports: [</p>
                                                 <div class="codeIndent">
                                                     <p>...</p>
-                                                    <p><span class="moduleStyle">EffectsModule</span>.<span class="decoratorStyle">forRoot</span>([ ]),</p>
+                                                    <p><span class="moduleStyle">EffectsModule</span>.<span class="decoratorStyle">forRoot</span>&#40;[ ]&#41;,</p>
 
                                                 </div>
 
                                             ]
-                                        <p>});</p>
+                                        <p>&#125;&#41;&#59;</p>
 
 
                                       </code>
                                   </pre>
         <div class="codefileInfo">
-          <span class="folderStyle">app</span> >
+          <span class="folderStyle">app</span> &gt;
           <span class="filename">app.module.ts</span>
         </div>
 
@@ -73,7 +73,7 @@
 
       <p>When you create an NgRx effects they are located in an effects file in their respective feature state
         folder.
-        The file follows the standard naming convention with the feature in the title... 'feature'.effects.ts. In
+        The file follows the standard naming convention with the feature in the title... &#39;feature&#39;.effects.ts. In
         this example we are using the product
         feature module and adding an effect that will get an array of products from the server. It is important to
         note that at the top of the file we
@@ -93,26 +93,26 @@
                                         <code class="coderBlock">
 
 
-                                          <p> <span class="importStyle">import</span> { <span class="moduleStyle">Injectable</span> } from <span class="fileStyle">'@angular/core'</span>;  </p>
-                                          <p> <span class="importStyle">import</span> { <span class="moduleStyle">Actions, Effect, ofType</span> } from <span class="fileStyle">'@ngrx/effects'</span>;</p>
-                                          <p> <span class="importStyle">import</span> { <span class="moduleStyle">ProductService</span> } from <span class="fileStyle">'../product.service'</span>;  </p>
-                                          <p> <span class="importStyle">import </span><span class="moduleStyle">* </span><span class="importStyle">as </span><span class="moduleStyle">productActions </span><span class="importStyle">from </span><span class="fileStyle">'../state/product.actions'</span>;  </p>
-                                           <p><span class="importStyle">import </span>{</p>
+                                          <p> <span class="importStyle">import</span> &#123; <span class="moduleStyle">Injectable</span> &#125; from <span class="fileStyle">&#39;&#64;angular/core&#39;</span>&#59;  </p>
+                                          <p> <span class="importStyle">import</span> &#123; <span class="moduleStyle">Actions, Effect, ofType</span> &#125; from <span class="fileStyle">&#39;&#64;ngrx/effects&#39;</span>&#59;</p>
+                                          <p> <span class="importStyle">import</span> &#123; <span class="moduleStyle">ProductService</span> &#125; from <span class="fileStyle">&#39;../product.service&#39;</span>&#59;  </p>
+                                          <p> <span class="importStyle">import </span><span class="moduleStyle">* </span><span class="importStyle">as </span><span class="moduleStyle">productActions </span><span class="importStyle">from </span><span class="fileStyle">&#39;../state/product.actions&#39;</span>&#59;  </p>
+                                           <p><span class="importStyle">import </span>&#123;</p>
                                             <p><span class="codeIndent"></span><span class="moduleStyle">mergeMap, map, catchError</span></p>
-                                            <p>}<span class="importStyle"> from </span><span class="fileStyle">'rxjs/operators'</span>;</p>
-                                            <p><span class="importStyle">import</span> { <span class="moduleStyle">Product </span>} <span class="importStyle">from </span><span class="fileStyle">'../product'</span>;</p>
-                                            <p><span class="importStyle">import</span> { <span class="moduleStyle">of </span>} <span class="importStyle">from </span><span class="fileStyle">'rxjs'</span>;</p>
+                                            <p>&#125;<span class="importStyle"> from </span><span class="fileStyle">&#39;rxjs/operators&#39;</span>;</p>
+                                            <p><span class="importStyle">import</span> &#123; <span class="moduleStyle">Product </span>&#125; <span class="importStyle">from </span><span class="fileStyle">&#39;../product&#39;</span>&#59;</p>
+                                            <p><span class="importStyle">import</span> &#123; <span class="moduleStyle">of </span>&#125; <span class="importStyle">from </span><span class="fileStyle">&#39;rxjs&#39;</span>&#59;</p>
                                             <br><br>
 
 
-                                          <p><span class="decoratorStyle">@Injectable()</span></p>
-                                              <p><span class="importStyle">export </span><span class="interfaceStyle">class </span><span class="folderStyle">ProductEffects</span> {</p>
-                                                <p><span class="codeIndent"></span><span class="interfaceStyle">constructor </span>(</p>
+                                          <p><span class="decoratorStyle">&#64;Injectable()</span></p>
+                                              <p><span class="importStyle">export </span><span class="interfaceStyle">class </span><span class="folderStyle">ProductEffects</span> &#123;</p>
+                                                <p><span class="codeIndent"></span><span class="interfaceStyle">constructor </span>&#40;</p>
                                                 <p><span class="codeIndent"></span><span class="codeIndent"></span><span class="interfaceStyle">private </span><span class="moduleStyle">action$</span>: <span class="folderStyle">Actions</span>,</p>
-                                                <p><span class="codeIndent"></span><span class="codeIndent"></span><span class="interfaceStyle">private </span><span class="moduleStyle">productService</span>: <span class="folderStyle">ProductService</span>) { }</p>
+                                                <p><span class="codeIndent"></span><span class="codeIndent"></span><span class="interfaceStyle">private </span><span class="moduleStyle">productService</span>: <span class="folderStyle">ProductService</span>&#41; &#123; &#125;</p>
 
                                                 <br><br>
-                                                <p><span class="decoratorStyle">@Effect()</span></p>
+                                                <p><span class="decoratorStyle">&#64;Effect()</span></p>
                                                 <p><span class="moduleStyle">LoadProducts$ </span>= <span class="interfaceStyle">this</span>.<span class="moduleStyle">actions$</span>.<span class="decoratorStyle">pipe</span>(</p>
                                                 <p><span class="codeIndent"></span><span class="decoratorStyle">ofType</span>(<span class="moduleStyle">productActions.ProductActionTypes.Load</span>),</p>
                                                 <p><span class="codeIndent"></span><span class="decoratorStyle">mergeMap</span>( (<span class="interfaceStyle">action</span>: <span class="folderStyle">productActions.Load</span>) =></p>
@@ -124,13 +124,13 @@
                                                 <p><span class="codeIndent"></span><span class="codeIndent">)</span></p>
                                                 <p><span class="codeIndent">)</span></p>
                                                 <p>);</p>
-                                                <p>}</p>
+                                                <p>&#125;</p>
 
                                         </code>
                                     </pre>
           <div class="codefileInfo">
-            <span class="folderStyle">app</span> >
-            <span class="folderStyle">users</span> >
+            <span class="folderStyle">app</span> &gt;
+            <span class="folderStyle">users</span> &gt;
             <span class="filename">user.module.ts</span>
           </div>
 

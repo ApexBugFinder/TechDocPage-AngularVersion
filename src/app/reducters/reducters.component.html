@@ -21,48 +21,48 @@
         <pre id="codeInputBlock" class="codeInputBlock">
                                       <code class="coderBlock">
 
-                                        <p><span class="importStyle">export </span><span class="interfaceStyle">function </span><span class="decoratorStyle">reducer </span> (</p>
+                                        <p><span class="importStyle">export </span><span class="interfaceStyle">function </span><span class="decoratorStyle">reducer </span> &#40;</p>
                                         <p><span class="moduleStyle codeIndent">state</span>: <span class="folderStyle">ProductState </span>= <span class="moduleStyle">initialState</span>,</p>
-                                        <p><span class="moduleStyle codeIndent">action</span>: <span class="folderStyle">ProductActions </span>): <span class="folderStyle">ProductState </span> {</p>
+                                        <p><span class="moduleStyle codeIndent">action</span>: <span class="folderStyle">ProductActions </span>&#41;: <span class="folderStyle">ProductState </span> &#123;</p>
                                           <br>
 
-                                        <p><span class="importStyle">switch </span>(<span class="moduleStyle">action.type</span>) {</p>
+                                        <p><span class="importStyle">switch </span>&#40;<span class="moduleStyle">action.type</span>&#41; &#123;</p>
                                         <br>
 
                                         <p><span class="importStyle">case </span><span class="moduleStyle">ProductActionTypes.ToggleProductCode</span>: </p>
-                                        <p><span class="importStyle">return </span>{</p>
+                                        <p><span class="importStyle">return </span>&#123;</p>
                                         <p><span class="moduleStyle codeIndent">...state</span>,</p>
                                         <p><span class="moduleStyle codeIndent">showProductCode</span>.<span class="moduleStyle">action</span>.<span class="moduleStyle">payload</span></p>
-                                        <p>},</p>
+                                        <p>&#125;,</p>
                                         <br>
 
                                         <p><span class="importStyle">case </span><span class="moduleStyle">ProductActionTypes.SetCurrentProduct</span>: </p>
-                                          <p><span class="importStyle">return </span>{</p>
+                                          <p><span class="importStyle">return </span>&#123;</p>
                                           <p><span class="moduleStyle codeIndent">...state</span>,</p>
-                                          <p><span class="moduleStyle codeIndent">currentProduct</span>: { ...<span class="moduleStyle">action</span>.<span class="moduleStyle">payload </span> }</p>
-                                          <p>},</p>
+                                          <p><span class="moduleStyle codeIndent">currentProduct</span>: &#123; ...<span class="moduleStyle">action</span>.<span class="moduleStyle">payload </span> &#125;</p>
+                                          <p>&#125;,</p>
                                           <br>
 
                                           <p><span class="importStyle">case </span><span class="moduleStyle">ProductActionTypes.InitializeCurrentProduct</span>: </p>
-                                          <p><span class="importStyle">return </span>{</p>
+                                          <p><span class="importStyle">return </span>&#123;</p>
                                           <p><span class="moduleStyle codeIndent">...state</span>,</p>
-                                          <p><span class="moduleStyle codeIndent">currentProduct</span>: { </p>
+                                          <p><span class="moduleStyle codeIndent">currentProduct</span>: &#123; </p>
                                             <div class="reducerCodeBlockIndent">
                                               <p class="codeIndent"><span class="codeIndent moduleStyle">Id: 0</span>,</p>
                                               <p class="codeIndent"><span class="codeIndent moduleStyle">productName: </span><span class="fileStyle">' '</span>,</p>
                                               <p class="codeIndent"><span class="codeIndent moduleStyle">productCode: </span><span class="fileStyle">'New'</span></p>
                                               <p class="codeIndent"><span class="codeIndent moduleStyle">description:</span><span class="fileStyle">' '</span>,</p>
-                                              <p>}</p>
+                                              <p>&#125;</p>
                                             </div>
 
-                                            <p>};</p>
+                                            <p>&#125;&#59;</p>
                                             <p>...</p>
                                       </code>
                                   </pre>
         <div class="codefileInfo">
-          <span class="folderStyle">app</span> >
-          <span class="folderStyle">product</span> >
-          <span class="folderStyle">state</span> >
+          <span class="folderStyle">app</span> &gt;
+          <span class="folderStyle">product</span> &gt;
+          <span class="folderStyle">state</span> &gt;
           <span class="filename">product.reducer.ts</span>
         </div>
 

@@ -1,0 +1,58 @@
+.utilizingFeatureSelectorsCodeBlock1 {
+  
+   
+    margin: auto;
+    width: auto;
+   
+}
+
+.utilizingFeatureSelectorsCodeBlock1 .coderBlock {
+  
+    padding: 2vw 4vw;
+}
+
+
+.utilizingFeatureSelectorsCodeBlock2 {
+  
+   
+    margin: auto;
+    width: auto;
+ 
+}
+
+.utilizingFeatureSelectorsCodeBlock2 .coderBlock {
+
+    padding: 1vw 3vw;
+}
+
+
+.utilizingFeatureSelectorsCodeBlock3 {
+  
+    margin:auto;
+    width:auto;
+}
+
+.utilizingFeatureSelectorsCodeBlock3 .coderBlock {
+
+    padding: 1vw 3vw;
+}
+
+.utilizingFeatureSelectorsCodeBlock4 {
+    display: flex;
+    flex-direction: column;
+   
+    margin: auto;
+    width: auto;
+    align-items: center;
+}
+
+.utilizingFeatureSelectorsCodeBlock4 .coderBlock {
+    padding-top: 0;
+    
+    margin-top: 0px;
+    align-self: flex-start;
+    width: 100%;
+}
+.utilizingFeatureSelectorsCodeBlock4 code#coderBlock {
+    padding: 2vw 4vw;
+}

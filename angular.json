@@ -127,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "TechDocPage-NgVersion"
+  "defaultProject": "TechDocPage-NgVersion",
+  "cli": {
+    "analytics": "e5af78e2-c334-4e50-a6ce-968dc6c5894b"
+  }
 }

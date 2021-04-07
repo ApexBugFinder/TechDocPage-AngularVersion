@@ -41,16 +41,16 @@
           <pre class="codeInputBlock">
 
                                           <code class="coderBlock">
-                                            <p>{</p>
+                                            <p>&#123;</p>
                                               <div class="codeIndent">
                                                 <p class="propertyStyle">type: <span class="fileStyle">'LOGIN'</span>,</p>
-                                                <p class="propertyStyle">payload:  {</p>
+                                                <p class="propertyStyle">payload:  &#123;</p>
                                                 <p class="propertyStyle codeIndent"><span class="moduleStyle codeIndent">userName: </span><span class="fileStyle">`BobbyBooShay3000`</span>,</p>
                                                 <p class="propertyStyle codeIndent"><span class="moduleStyle codeIndent">password: </span><span class="fileStyle">`secret`</span>,</p>
 
                                               </div>
 
-                                              <p>}</p>
+                                              <p>&#123;</p>
 
 
                                           </code>
@@ -69,12 +69,12 @@
 
       <div class="codeBlock generalCodeBlock">
         <pre id="codeInputBlock" class="codeInputBlock">
-                          <code class="coderBlock">
-                             <p><span class="importStyle">export </span><span class="interfaceStyle">enum </span><span class="folderStyle">ProductActionTypes</span> {</p>
-                              <p><span class="moduleStyle codeIndent">ToggleProduceCode</span> = <span class="fileStyle">`[Product] Toggle Product Code`</span>,</p>
-                              <p><span class="moduleStyle codeIndent">SetCurrentProduct </span> = <span class="fileStyle">`[Product] Set Current Product`</span>,</p>
-                              <p><span class="moduleStyle codeIndent">ClearCurrentProduct </span> = <span class="fileStyle">`[Product] Clear Current Product`</span></p>
-                              <p>}</p>
+                          <code class="coderBlock" ng-non-bindable>
+                             <p><span class="importStyle">export </span><span class="interfaceStyle">enum </span><span class="folderStyle">ProductActionTypes</span> &#123;</p>
+                              <p><span class="moduleStyle codeIndent">ToggleProduceCode</span> &#61; <span class="fileStyle">`[Product] Toggle Product Code`</span>,</p>
+                              <p><span class="moduleStyle codeIndent">SetCurrentProduct </span> &#61; <span class="fileStyle">`[Product] Set Current Product`</span>,</p>
+                              <p><span class="moduleStyle codeIndent">ClearCurrentProduct </span> &#61; <span class="fileStyle">`[Product] Clear Current Product`</span></p>
+                              <p>&#123;</p>
 
 
 
@@ -82,9 +82,9 @@
                         </code>
                                                   </pre>
         <div class="codefileInfo">
-          <span class="folderStyle">app</span> >
-          <span class="folderStyle">products</span> >
-          <span class="folderStyle">state</span> >
+          <span class="folderStyle">app</span> &gt;
+          <span class="folderStyle">products</span> &gt;
+          <span class="folderStyle">state</span> &gt;
           <span class="filename">product.actions.ts</span>
         </div>
 
@@ -101,38 +101,38 @@
 
       <div class="codeBlock generalCodeBlock">
         <pre id="codeInputBlock" class="codeInputBlock">
-                                                          <code class="coderBlock">
+                                                          <code class="coderBlock" ngNonBindable>
 
                                                                  <p><span class="importStyle">export </span>
                                                                     <span class="interfaceStyle">class </span>
                                                                     <span class="folderStyle">ToggleProductCode </span>
                                                                     <span class="interfaceStyle">implements </span>
-                                                                    <span class="folderStyle">Action </span> {</p>
+                                                                    <span class="folderStyle">Action </span> &#123;</p>
                                                                   <p><span class="interfaceStyle codeIndent">readonly </span>
                                                                      <span class="moduleStyle">type = ProductActionTypes.ToggleProductCode</span>;</p>
                                                                   <p>
-                                                                    <span class="codeIndent">constructor</span>(
+                                                                    <span class="codeIndent">constructor</span>&#40;
 
                                                                       <span class="interfaceStyle">public </span>
                                                                       <span class="moduleStyle">payload: </span>
-                                                                      <span class="folderStyle">boolean</span>) {}</p>
-                                                                  <p>}</p>
+                                                                      <span class="folderStyle">boolean</span>&#41; &#123;&#123;</p>
+                                                                  <p>&#123;</p>
                                                                     <br>
 
                                                                   <p><span class="importStyle">export </span>
                                                                     <span class="interfaceStyle">class </span>
                                                                     <span class="folderStyle">SetCurrentProduct </span>
                                                                     <span class="interfaceStyle">implements </span>
-                                                                    <span class="folderStyle">Action </span> {</p>
+                                                                    <span class="folderStyle">Action </span> &#123;</p>
                                                                   <p><span class="interfaceStyle codeIndent">readonly </span>
                                                                      <span class="moduleStyle">type = ProductActionTypes.SetCurrentProduct</span>;</p>
                                                                   <p>
-                                                                    <span class="codeIndent">constructor</span>(
+                                                                    <span class="codeIndent">constructor</span>&#40;
 
                                                                       <span class="interfaceStyle">public </span>
                                                                       <span class="moduleStyle">payload: </span>
-                                                                      <span class="folderStyle">Product</span>) {}</p>
-                                                                  <p>}</p>
+                                                                      <span class="folderStyle">Product</span>&#41; &#123;&#123;</p>
+                                                                  <p>&#123;</p>
                                                                   <br>
 
 
@@ -140,10 +140,10 @@
                                                                     <span class="interfaceStyle">class </span>
                                                                     <span class="folderStyle">ClearCurrentProduct </span>
                                                                     <span class="interfaceStyle">implements </span>
-                                                                    <span class="folderStyle">Action </span> {</p>
+                                                                    <span class="folderStyle">Action </span> &#123;</p>
                                                                   <p><span class="interfaceStyle codeIndent">readonly </span>
                                                                      <span class="moduleStyle">type = ProductActionTypes.SetCurrentProduct</span>;</p>
-                                                                  <p>}</p>
+                                                                  <p>&#123;</p>
 
                                                           </code>
                                                       </pre>
