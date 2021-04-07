@@ -1,0 +1,69 @@
+
+.headertitle {
+    display: flex;
+    flex-direction: row;
+    width: 85vmin;
+    margin: auto;
+    align-items: center;
+    font-size: 10vmax;
+    font-family: omnes-cyrillic, sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    letter-spacing: 4vw;
+    text-shadow:0px 3px 6px rgba(0,0,0,.79);
+    color: var(--primaryColor);
+}
+.maintitle {
+    display: inline-block;
+    flex-shrink: 1;
+    
+   
+    margin: 0px;
+    width: auto;
+    z-index: 0;
+    text-align: center;
+    
+    
+    opacity: .5;
+    
+
+}
+.maintitle2 {
+    display: inline-block;
+    flex-shrink: 1;
+    /* font-size: 150px;
+    font-family: omnes-cyrillic, sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    letter-spacing: 90px; */
+    margin: 0px;
+    width: auto;
+    z-index: 0;
+    text-align: center;
+    
+    
+    opacity: .5;
+}
+.subTitle {
+    display: inline;
+    text-align: center;
+    z-index: 8;
+    font-family: coniferous, sans-serif;
+    font-size: 100px;
+    font-weight: 500;
+    font-style: normal;
+    margin: -100px auto;
+}
+.siteLogoContainer {
+    height: 10px;
+    width: 301px;
+    align-self: flex-start;
+    margin: 10px auto;
+    z-index: 5;
+}
+.siteLogo {
+    z-index: 5;
+    width: 15vmax;
+    height: auto;
+    margin: auto;
+}

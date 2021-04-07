@@ -13,10 +13,15 @@ import { GettingStartedComponent } from './getting-started/getting-started.compo
 import { ImmutableStateComponent } from './immutable-state/immutable-state.component';
 import { InitializeStateComponent } from './initialize-state/initialize-state.component';
 import { IntroductionComponent } from './introduction/introduction.component';
-import { ReductersComponent } from './reducters/reducters.component';
+import { ReducersComponent } from './reducers/reducers.component';
 import { ReduxPatternComponent } from './redux-pattern/redux-pattern.component';
 import { StrongTypingComponent } from './strong-typing/strong-typing.component';
 import { UtilizingFeatureSelectorsComponent } from './utilizing-feature-selectors/utilizing-feature-selectors.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SharedModule } from './helpers/shared.module';
+import { HeaderComponent } from './header/header.component';
+import { MenusModule } from './menus/menus.module';
+
 
 @NgModule({
   declarations: [
@@ -31,14 +36,19 @@ import { UtilizingFeatureSelectorsComponent } from './utilizing-feature-selector
     ImmutableStateComponent,
     InitializeStateComponent,
     IntroductionComponent,
-    ReductersComponent,
+    ReducersComponent,
     ReduxPatternComponent,
     StrongTypingComponent,
-    UtilizingFeatureSelectorsComponent
+    UtilizingFeatureSelectorsComponent,
+    HeaderComponent,
+  
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    SharedModule,
+    MenusModule
   ],
   providers: [],
   bootstrap: [AppComponent]
