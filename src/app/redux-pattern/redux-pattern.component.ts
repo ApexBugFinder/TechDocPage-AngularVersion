@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./redux-pattern.component.scss']
 })
 export class ReduxPatternComponent implements OnInit {
-
+  myHeading = 'Redux Pattern';
   constructor() { }
 
   ngOnInit(): void {

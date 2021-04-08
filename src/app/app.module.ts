@@ -21,6 +21,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SharedModule } from './helpers/shared.module';
 import { HeaderComponent } from './header/header.component';
 import { MenusModule } from './menus/menus.module';
+import { ChapterHeadingComponent } from './chapter-heading/chapter-heading.component';
 
 
 @NgModule({
@@ -41,6 +42,7 @@ import { MenusModule } from './menus/menus.module';
     StrongTypingComponent,
     UtilizingFeatureSelectorsComponent,
     HeaderComponent,
+    ChapterHeadingComponent,
   
   ],
   imports: [

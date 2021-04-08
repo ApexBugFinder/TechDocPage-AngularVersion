@@ -54,10 +54,12 @@
     margin-left: 15px;
 }
 .equationContent .equationContentContainer2 ul li {
-    margin-left: 100px;
+    margin-left: 80px;
+    width: 80px;
 }
 .equationContent ul li{
     list-style: none;
+    font-size: 14px;
 }
 .angularDiv {
     grid-area: angular;
@@ -68,7 +70,7 @@
 .oper8orDiv {
     grid-area: oper8or;
     font-size: 40px;
-    margin: auto;
+    margin: auto 20px;
 }
 .oper8orDivEq {
     grid-area: oper8orEq;
@@ -87,4 +89,24 @@
 .quoteAuthor {
     margin: auto;
     margin-left: 60%;
+}
+
+@media (max-width: 1153px) {
+.listIndent {
+    padding-left: 20px;
+}
+.listIndent li {
+    margin-left: 20px;
+}
+.equationContentContainer2 ul li {
+    margin-left: 0px;
+    width: 80px;
+}
+.equationContentContainer2 ul {
+    padding-left: 0px;
+    margin-left: 40px;
+}
+.ngrxEquationLogo {
+    margin-left: 0px;
+}
 }

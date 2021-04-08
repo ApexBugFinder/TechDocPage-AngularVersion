@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DispatchingActionsComponent implements OnInit {
 
+  myHeading = 'Dispatching Actions';
+
   constructor() { }
 
   ngOnInit(): void {

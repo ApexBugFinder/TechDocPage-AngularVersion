@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EffectsComponent implements OnInit {
 
+  myHeading = 'Effects';
   constructor() { }
 
   ngOnInit(): void {

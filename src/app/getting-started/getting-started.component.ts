@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./getting-started.component.scss']
 })
 export class GettingStartedComponent implements OnInit {
-
+  myHeading = 'Getting Started';
   constructor() { }
 
   ngOnInit(): void {

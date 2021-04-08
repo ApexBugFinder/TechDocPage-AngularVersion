@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ReducersComponent implements OnInit {
 
+  myHeading = 'Reducers';
+
   constructor() { }
 
   ngOnInit(): void {

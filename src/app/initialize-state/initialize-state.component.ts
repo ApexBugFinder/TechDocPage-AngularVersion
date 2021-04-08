@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InitializeStateComponent implements OnInit {
 
+  myHeading = 'Initialize State';
   constructor() { }
 
   ngOnInit(): void {

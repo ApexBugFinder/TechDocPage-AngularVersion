@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ImmutableStateComponent implements OnInit {
 
+  myHeading = 'State - Immutable Store';
+
   constructor() { }
 
   ngOnInit(): void {

@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./creating-selectors.component.scss']
 })
 export class CreatingSelectorsComponent implements OnInit {
-
+  myHeading  = 'Creating Feature Selectors';
   constructor() { }
 
   ngOnInit(): void {

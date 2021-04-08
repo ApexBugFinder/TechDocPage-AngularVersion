@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StrongTypingComponent implements OnInit {
 
+  myHeading = 'Strong Typing - Feature State Management';
   constructor() { }
 
   ngOnInit(): void {

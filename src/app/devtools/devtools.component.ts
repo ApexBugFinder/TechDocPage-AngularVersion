@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DevtoolsComponent implements OnInit {
 
+  myHeading = 'Dev Tools';
+
   constructor() { }
 
   ngOnInit(): void {

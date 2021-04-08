@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FeatureStateManagementComponent implements OnInit {
 
+  myHeading = 'Feature State Management';
   constructor() { }
 
   ngOnInit(): void {

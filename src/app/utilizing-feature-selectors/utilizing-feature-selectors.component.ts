@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UtilizingFeatureSelectorsComponent implements OnInit {
 
+  myHeading = 'Utilizing Feature Selectors';
+
   constructor() { }
 
   ngOnInit(): void {

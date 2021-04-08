@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./actions.component.scss']
 })
 export class ActionsComponent implements OnInit {
-
+  myHeading = 'Actions';
   constructor() { }
 
   ngOnInit(): void {
