@@ -12,4 +12,24 @@ export class TopMenuComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  toggleTopMenu(): void {
+    console.log('Toggling Top Menu');
+    const topMenuContainer = document.getElementById('top-nav-bar');
+    if (topMenuContainer === null) {
+      console.log('sorry null');
+    } else {
+      if (topMenuContainer.classList.contains('hide-nav-bar')) {
+      topMenuContainer.classList.remove('hide-nav-bar');
+      console.log(topMenuContainer.classList);
+      } else {
+      topMenuContainer.classList.add('hide-nav-bar');
+      console.log(topMenuContainer.classList);
+    }
+    }
+
+
+
+    return;
+  }
+
 }

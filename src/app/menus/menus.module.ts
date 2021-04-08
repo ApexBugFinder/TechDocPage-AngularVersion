@@ -12,6 +12,10 @@ import { SideMenuComponent } from './side-menu/side-menu.component';
   ],
   imports: [
     CommonModule
+  ],
+  exports: [
+    TopMenuComponent,
+    SideMenuComponent
   ]
 })
 export class MenusModule { }
