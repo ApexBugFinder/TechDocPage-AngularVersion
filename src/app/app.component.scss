@@ -18,7 +18,7 @@ mat-drawer-content {
 .sideMenuContainer{
     grid-area: sideMenuContainer;
     margin: 0px;
-
+    z-index: 10;
 }
 .contentContainer {
     grid-area: contentContainer;

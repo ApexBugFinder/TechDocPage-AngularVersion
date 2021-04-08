@@ -1,3 +1,8 @@
+.ngrxPreReqs {
+    display:flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
 .ngrxPreReqs a{
     margin-left: 8vw;
 
@@ -5,16 +10,25 @@
 
 .ngrxPreReqs a .logoSize {
     width: 80px;
+    max-height: 60px;
 }
 
+.gettingStartedUL1 li{
+    margin-bottom: 20px;
+}
 
-
-
+.gettingStartedTerminalCode1 {
+    width: 40%;
+    margin: auto;
+}
 
 .gettingStartedCodeBlock1 {
     margin: 20px auto;
-    width: auto;
+    width: 400px;
  }
  .gettingStartedCodeBlock1 .coderBlock {
      padding: 1vw 4vw;
  }
+.gettingStartedCodeBlock1 .codefileInfo {
+    width: 400px;
+}

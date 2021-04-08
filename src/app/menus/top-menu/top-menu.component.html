@@ -1,58 +1,35 @@
-<div class="topMenuContainer" id="topMenuContainer">
-<div class="topMenuContentContainer">
-            
-    <div class="topMenu">
-      <div id="top-nav-bar" class="top-nav-bar hide-nav-bar">
-        <ul class="top-nav-list">
-          <li class="nav-li">NGRX: The Basics</li>
-          <li class="nav-li">
-            <a href="#introduction" class="nav-item" onclick="return toggleTopMenu()">Introduction</a>
-          </li>
-          <li class="nav-li">
-            <a href="#reduxPattern" class="nav-item" onclick="return toggleTopMenu()">Redux Pattern</a>
-          </li>
-          <li class="nav-li">
-            <a href="#gettingStarted" class="nav-item" onclick="return toggleTopMenu()">Getting Started</a>
-          </li>
-          <li class="nav-li">
-            <a href="#state" class="nav-item" onclick="return toggleTopMenu()">State</a>
-          </li>
-          <li class="nav-li">
-            <a href="#initializeState" class="nav-item" onclick="return toggleTopMenu()">Initialize State</a>
-          </li>
-          <li class="nav-li">
-            <a href="#featureStateManagement" class="nav-item" onclick="return toggleTopMenu()">Feature State Management</a>
-          </li>
-          <li class="nav-li">
-            <a href="#strongTyping" class="nav-item" onclick="return toggleTopMenu()">Strong Typing </a>
-          </li>
-          <li class="nav-li">
-            <a href="#creatingFeatureSelectors" class="nav-item" onclick="return toggleTopMenu()">Creating Feature Selectors</a>
-          </li>
-          <li class="nav-li">
-            <a href="#actions" class="nav-item" onclick="return toggleTopMenu()">Actions</a>
-          </li>
-          <li class="nav-li">
-            <a href="#dispatchingActions" class="nav-item" onclick="return toggleTopMenu()">Dispatching Actions</a>
-          </li>
-          <li class="nav-li">
-            <a href="#reducers" class="nav-item" onclick="return toggleTopMenu()">Reducer</a>
-          </li>
-          <li class="nav-li">
-            <a href="#utilizingFeatureSelectors" class="nav-item" onclick="return toggleTopMenu()">Utilizing Feature Selectors</a>
-          </li>
-          <li class="nav-li">
-            <a href="#effects" class="nav-item" onclick="return toggleTopMenu()">Effects</a>
-          </li>
-          <li class="nav-li">
-            <a class="nav-item" (click)="toggleTopMenu()">Dev Tools</a>
-          </li>
-        </ul>
-      </div>
+    <div class="topMenuContainer">
+        <div class="topMenuContentContainer">
+
+        
+        <div class="topMenu">
+            <div id="top-nav-bar" #topNavBar class="top-nav-bar hide-nav-bar">
+        
+
+        
+            <mat-nav-list class="top-nav-list">
+                <mat-list-item class="normal">NGRX: The Basics</mat-list-item>
+                <mat-list-item class="normalLink" routerLink="introduction"  (click)="toggleTopMenu()" routerLinkActive="currentLink">Introduction</mat-list-item>
+                <mat-list-item class="normalLink" routerLink="reduxPattern" (click)="toggleTopMenu()" routerLinkActive="currentLink">Redux Pattern</mat-list-item>
+                <mat-list-item class="normalLink" routerLink="gettingStarted" (click)="toggleTopMenu()" routerLinkActive="currentLink">Getting Started</mat-list-item>
+                <mat-list-item class="normalLink" routerLink="immutableState" (click)="toggleTopMenu()" routerLinkActive="currentLink">State</mat-list-item>
+                <mat-list-item class="normalLink" routerLink="initializeState" (click)="toggleTopMenu()" routerLinkActive="currentLink">Initialize State</mat-list-item>
+                <mat-list-item class="normalLink" routerLink="featureStateManagement" (click)="toggleTopMenu()" routerLinkActive="currentLink">Feature State Management</mat-list-item>
+                <mat-list-item class="normalLink" routerLink="strongTyping" (click)="toggleTopMenu()" routerLinkActive="currentLink">Strong Typing</mat-list-item>
+                <mat-list-item class="normalLink" routerLink="creatingFeatureSelectors" (click)="toggleTopMenu()" routerLinkActive="currentLink">Creating Feature Selectors</mat-list-item>
+                <mat-list-item class="normalLink" routerLink="actions" (click)="toggleTopMenu()" routerLinkActive="currentLink">Actions</mat-list-item>
+                <mat-list-item class="normalLink" routerLink="dispatchingActions" (click)="toggleTopMenu()" routerLinkActive="currentLink">Dispatching Actions</mat-list-item>
+                <mat-list-item class="normalLink" routerLink="reducer" (click)="toggleTopMenu()" routerLinkActive="currentLink">Reducer</mat-list-item>
+                <mat-list-item class="normalLink" routerLink="utilizingFeatureSelectors" (click)="toggleTopMenu()" routerLinkActive="currentLink">Utilizing Feature Selectors</mat-list-item>
+                <mat-list-item class="normalLink" routerLink="effects" (click)="toggleTopMenu()" routerLinkActive="currentLink">Effects</mat-list-item>
+                <mat-list-item class="normalLink" routerLink="devTools" (click)="toggleTopMenu()" routerLinkActive="currentLink">Dev Tools</mat-list-item>
+            </mat-nav-list>
+        </div>
     </div>
     
     <div class="topMenuButton">
-        <a (click)="toggleTopMenu()">
+        <a  (click)="toggleTopMenu()">
        <img src="../../../assets/images/SVG/ngrx_logo.svg" alt="top menu button" class="top-menu-button-icon"></a>
     </div>
+</div>
 </div>

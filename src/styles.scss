@@ -1,15 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
 
 html, body { height: 100%; }
+@import './assets/css/navBar-styles.scss';
+@import './assets/css/codeBlock-styles.scss';
+
 body { margin: 0; font-family: omnes-cyrillic,'Segoe UI', "Helvetica Neue", sans-serif; }
 :root{
     --primaryColor: #BA2BD2;
-    --secondayColor: #707070;
+    --secondaryColor: #707070;
     --accent1Color: #4B304F;
     --accent2Color: #E0DA62;
     --folderColor: #57B3A1;
 
 
+}
+.currentLink {
+    color: red;
 }
 .hide-nav-bar {
     background-color: white;
@@ -62,7 +68,7 @@ ul {
 }
 li {
     font-family: omnes-cyrillic, 'Segoe IU';
-    font-size: 1.2rem;
+    font-size: 16px;
     text-decoration: none;
     
 }

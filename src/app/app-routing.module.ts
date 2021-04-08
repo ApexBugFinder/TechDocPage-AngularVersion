@@ -24,17 +24,17 @@ const routes: Routes = [
   { path: 'introduction', component: IntroductionComponent },
   { path: 'reduxPattern', component: ReduxPatternComponent },
   { path: 'gettingStarted', component: GettingStartedComponent },
-  { path: 'ImmutableState', component: ImmutableStateComponent },
+  { path: 'immutableState', component: ImmutableStateComponent },
   { path: 'initializeState', component: InitializeStateComponent },
   { path: 'featureStateManagement', component: FeatureStateManagementComponent },
   { path: 'strongTyping', component: StrongTypingComponent },
   { path: 'creatingFeatureSelectors', component: CreatingSelectorsComponent },
   { path: 'actions', component: ActionsComponent },
   { path: 'dispatchingActions', component: DispatchingActionsComponent },
-  { path: 'reducers', component: ReducersComponent},
+  { path: 'reducer', component: ReducersComponent},
   { path: 'utilizingFeatureSelectors', component: UtilizingFeatureSelectorsComponent },
   { path: 'effects', component: EffectsComponent },
-  { path: 'devtools', component: DevtoolsComponent }
+  { path: 'devTools', component: DevtoolsComponent }
 
 
 ];

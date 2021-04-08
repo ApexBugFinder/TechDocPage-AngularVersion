@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TopMenuComponent } from './top-menu/top-menu.component';
 import { SideMenuComponent } from './side-menu/side-menu.component';
+import { MatListModule } from '@angular/material/list';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -11,7 +13,11 @@ import { SideMenuComponent } from './side-menu/side-menu.component';
     SideMenuComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    MatListModule,
+    RouterModule
+
+
   ],
   exports: [
     TopMenuComponent,
