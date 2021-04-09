@@ -13,13 +13,13 @@
 }
 
 .featureStateGrid1PicBlock {
-    width:85%;
+    width:65%;
 }
 #featureStatGridPic2 {
-    width: 35vmax;
+    width: 30vmax;
 }
 .featureStateGrid1CodeBlock {
-    width: 50%;
+    width: 400px;
     display: flex;
     flex-direction: column;
     row-gap: 10px;
@@ -29,24 +29,33 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
+    
     padding: 0px;
 }
-
+.featureCodeUsersBlock .coderBlock {
+    width: 100%;
+}
 
 .featureCodeProductsBlock {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
+    padding: 0px;
 }
 
 .featureCodeProductsBlock .codeInputBlock {
     border: 1px solid var(--folderColor);
+    margin: 0px 0px;
+    width: 100%;
 
 }
 
 .featureCodeUsersBlock .codeInputBlock {
     border: 1px solid var(--folderColor);
+    margin: 0px 0px;
+    width: 100%;
+    padding: 0;
 }
 p.featureSliceTitle {
     margin-top: 0px;
@@ -87,8 +96,51 @@ p.featureSliceTitle {
     column-gap: 40px;
     justify-content: space-around;
 }
+@media (max-width: 1153px) {
+    .featureStateGrid2CodeBlock {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: auto;
+        column-gap: 40px;
+        align-items: center;
+    }
+    .featureStateGrid2CodeBlock1 .codefileInfo {
+        width: 100%;
+        height:20px;
+        padding: 1vw 0;
+
+    }
+    .featureStateGrid2CodeBlock1 code.coderBlock{
+        padding: 1vw 4vw;
+        width: 100%;
+    
+    }
+    .featureStateGrid2CodeBlock1 .codeInputBlock {
+        width: 100%;
+    }
+    .featureStateGrid2CodeBlock2 .codefileInfo {
+        width: 100%;
+        height:20px;
+        padding: 1vw 0;
+    }
+    .featureStateGrid2CodeBlock2 code.coderBlock{
+        padding: 1vw 4vw;
+        width: 100%;
+        
+    
+    }
+}
+.featureStateGrid2CodeBlock .codefileInfo {
+    width: 100%;
+    height:20px;
+    padding: 1vw 0px;
+
+}
+
 .featureStateGrid2CodeBlock1 .coderBlock{
     padding: 1vw 4vw;
+
 }
 .featureStateGrid2CodeBlock2 .coderBlock{
     padding: 1vw 4vw;

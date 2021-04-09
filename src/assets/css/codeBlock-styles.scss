@@ -1,12 +1,12 @@
 .terminalCode{
     width: 70%;
-    
+    margin: auto;
 }
 .terminalCode pre{
     margin: 40px auto;
 }
 kbd {
-    
+    font-size: 14px;
     padding: 0px 20px;
 }
 .codeBlock {
@@ -36,6 +36,10 @@ pre .codeInputBlock {
     margin-bottom: 0px;
     color: white;
 }
+.codeInputBlock {
+    border: 2px solid var(--accent1Color);
+    
+}
 .codeInputBlock p {
     font-family: sans-serif;
     font-size: 14px;
@@ -51,6 +55,9 @@ pre .codeInputBlock {
     margin: 0px;
     font-family: sans-serif;
     font-size: 14px;
+    border-bottom: 2px solid var(--accent1Color);
+    border-left: 2px solid var(--accent1Color);
+    border-right: 2px solid var(--accent1Color);
 }
 pre {
     // width: 400px;
@@ -63,19 +70,52 @@ pre {
 pre code {
     display: inline-block;
     color: black;
-    padding: 20px;
+    padding: 1vw 4vw;
     
     height: auto;
     white-space: normal;
 }
 
 .generalCodeBlock {
-    margin: auto;
-    width: auto;
+    margin: 0;
+    width: 100%;
+    min-width: 400px;
 }
 .generalCodeBlock .coderBlock {
-    width: 80%;
-    padding: auto 4vw;
+    width: 100%;
+    padding: auto 0vw;
+}
+.generalCodeBlock .codeInputBlock {
+    width: 100%;
+    min-width: 400px;
+}
+.generalCodeBlock .codefileInfo {
+    width: 100%;
+    padding: 1vw 0;
+    min-width: 400px;
+
+}
+
+@media (max-width: 1153px) {
+    .generalCodeBlock {
+        margin: 0;
+       
+        min-width: 400px;
+    }
+    .generalCodeBlock .coderBlock {
+        min-width: 400px;
+        padding: auto 0vw;
+    }
+    .generalCodeBlock .codeInputBlock {
+       
+        min-width: 400px;
+    }
+    .generalCodeBlock .codefileInfo {
+        
+        padding: 1vw 0;
+        min-width: 400px;
+    
+    }
 }
 
 /* TEXT COLORS and styling */
