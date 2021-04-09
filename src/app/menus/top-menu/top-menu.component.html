@@ -9,20 +9,9 @@
         
             <mat-nav-list class="top-nav-list">
                 <mat-list-item class="normal">NGRX: The Basics</mat-list-item>
-                <mat-list-item class="normalLink" routerLink="chapterContent/introduction"  (click)="toggleTopMenu()" routerLinkActive="currentLink">Introduction</mat-list-item>
-                <mat-list-item class="normalLink" routerLink="chapterContent/reduxPattern" (click)="toggleTopMenu()" routerLinkActive="currentLink">Redux Pattern</mat-list-item>
-                <mat-list-item class="normalLink" routerLink="chapterContent/gettingStarted" (click)="toggleTopMenu()" routerLinkActive="currentLink">Getting Started</mat-list-item>
-                <mat-list-item class="normalLink" routerLink="chapterContent/immutableState" (click)="toggleTopMenu()" routerLinkActive="currentLink">State</mat-list-item>
-                <mat-list-item class="normalLink" routerLink="chapterContent/initializeState" (click)="toggleTopMenu()" routerLinkActive="currentLink">Initialize State</mat-list-item>
-                <mat-list-item class="normalLink" routerLink="chapterContent/featureStateManagement" (click)="toggleTopMenu()" routerLinkActive="currentLink">Feature State Management</mat-list-item>
-                <mat-list-item class="normalLink" routerLink="chapterContent/strongTyping" (click)="toggleTopMenu()" routerLinkActive="currentLink">Strong Typing</mat-list-item>
-                <mat-list-item class="normalLink" routerLink="chapterContent/creatingFeatureSelectors" (click)="toggleTopMenu()" routerLinkActive="currentLink">Creating Feature Selectors</mat-list-item>
-                <mat-list-item class="normalLink" routerLink="chapterContent/actions" (click)="toggleTopMenu()" routerLinkActive="currentLink">Actions</mat-list-item>
-                <mat-list-item class="normalLink" routerLink="chapterContent/dispatchingActions" (click)="toggleTopMenu()" routerLinkActive="currentLink">Dispatching Actions</mat-list-item>
-                <mat-list-item class="normalLink" routerLink="chapterContent/reducer" (click)="toggleTopMenu()" routerLinkActive="currentLink">Reducer</mat-list-item>
-                <mat-list-item class="normalLink" routerLink="chapterContent/utilizingFeatureSelectors" (click)="toggleTopMenu()" routerLinkActive="currentLink">Utilizing Feature Selectors</mat-list-item>
-                <mat-list-item class="normalLink" routerLink="chapterContent/effects" (click)="toggleTopMenu()" routerLinkActive="currentLink">Effects</mat-list-item>
-                <mat-list-item class="normalLink" routerLink="chapterContent/devTools" (click)="toggleTopMenu()" routerLinkActive="currentLink">Dev Tools</mat-list-item>
+
+                <mat-list-item *ngFor="let chapter of chapterList" class="normalLink" routerLink="{{chapter.address}}" routerLinkActive="currentLink" (click)="toggleTopMenu()">{{chapter.heading}}</mat-list-item>
+               
             </mat-nav-list>
         </div>
     </div>

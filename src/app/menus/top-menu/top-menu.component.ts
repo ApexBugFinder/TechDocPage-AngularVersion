@@ -1,4 +1,5 @@
-import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, Input, OnInit, ViewChild } from '@angular/core';
+import { ChapterContent } from 'src/app/chapter-content/models/chapterContent';
 
 @Component({
   selector: 'app-top-menu',
@@ -10,6 +11,9 @@ import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angula
 
 export class TopMenuComponent implements OnInit, AfterViewInit {
   @ViewChild('topNavBar') topMenu: ElementRef | undefined;
+
+  @Input() chapterList: ChapterContent[] = [];
+
   constructor() {
 
   }
@@ -22,20 +26,6 @@ export class TopMenuComponent implements OnInit, AfterViewInit {
   ngOnInit(): void {
   }
 
-  // toggleTopMenu(): void {
-  //   console.log('Toggling Top Menu');
-  //   const topMenuContainer = document.getElementById('top-nav-bar');
-  //   if (topMenuContainer === null) {
-  //     console.log('sorry null');
-  //   } else {
-  //     if (topMenuContainer.classList.contains('hide-nav-bar')) {
-  //     topMenuContainer.classList.remove('hide-nav-bar');
-  //     console.log(topMenuContainer.classList);
-  //     } else {
-  //     topMenuContainer.classList.add('hide-nav-bar');
-  //     console.log(topMenuContainer.classList);
-  //   }
-  //   }
 
   toggleTopMenu(): void {
 

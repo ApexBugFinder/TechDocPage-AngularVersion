@@ -4,7 +4,8 @@ import { TopMenuComponent } from './top-menu/top-menu.component';
 import { SideMenuComponent } from './side-menu/side-menu.component';
 import { MatListModule } from '@angular/material/list';
 import { RouterModule } from '@angular/router';
-
+import { StoreModule} from '@ngrx/store';
+import { menuReducer } from './state/menu-reducer';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { RouterModule } from '@angular/router';
   imports: [
     CommonModule,
     MatListModule,
-    RouterModule
+    RouterModule,
+    StoreModule.forFeature('menus', menuReducer)
 
 
   ],

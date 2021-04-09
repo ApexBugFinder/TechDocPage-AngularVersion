@@ -33,7 +33,8 @@
             "styles": [
               "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.scss",
-              "src/assets/css/*.scss"
+              "src/assets/css/codeBlock-styles.scss",
+              "src/assets/css/navBar-styles.scss"
             ],
             "scripts": []
           },

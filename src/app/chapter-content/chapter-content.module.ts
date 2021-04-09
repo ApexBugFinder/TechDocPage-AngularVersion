@@ -41,7 +41,8 @@ import { ChapterHeadingModule } from '../chapter-heading/chapter-heading.module'
   imports: [
     CommonModule,
     ChapterContentRoutingModule,
-    ChapterHeadingModule
+    ChapterHeadingModule,
+
   ]
 })
 export class ChapterContentModule { }

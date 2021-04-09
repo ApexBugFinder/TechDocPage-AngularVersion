@@ -1,22 +1,13 @@
 
 <div class="sideMenuContainer">
     <div class="nav-bar" id="nav-bar">
-        <mat-nav-list class="nav-list">
+        <mat-nav-list class="nav-list"*ngIf="chapterList">
             <mat-list-item class="normal">NGRX: The Basics</mat-list-item>
-            <mat-list-item class="normalLink" routerLink="chapterContent/introduction"  routerLinkActive="currentLink">Introduction</mat-list-item>
-            <mat-list-item class="normalLink" routerLink="chapterContent/reduxPattern"  routerLinkActive="currentLink">Redux Pattern</mat-list-item>
-            <mat-list-item class="normalLink" routerLink="chapterContent/gettingStarted"  routerLinkActive="currentLink">Getting Started</mat-list-item>
-            <mat-list-item class="normalLink" routerLink="chapterContent/immutableState"  routerLinkActive="currentLink">State</mat-list-item>
-            <mat-list-item class="normalLink" routerLink="chapterContent/initializeState"  routerLinkActive="currentLink">Initialize State</mat-list-item>
-            <mat-list-item class="normalLink" routerLink="chapterContent/featureStateManagement"  routerLinkActive="currentLink">Feature State Management</mat-list-item>
-            <mat-list-item class="normalLink" routerLink="chapterContent/strongTyping"  routerLinkActive="currentLink">Strong Typing</mat-list-item>
-            <mat-list-item class="normalLink" routerLink="chapterContent/creatingFeatureSelectors"  routerLinkActive="currentLink">Creating Feature Selectors</mat-list-item>
-            <mat-list-item class="normalLink" routerLink="chapterContent/actions" routerLinkActive="currentLink">Actions</mat-list-item>
-            <mat-list-item class="normalLink" routerLink="chapterContent/dispatchingActions"  routerLinkActive="currentLink">Dispatching Actions</mat-list-item>
-            <mat-list-item class="normalLink" routerLink="chapterContent/reducer"  routerLinkActive="currentLink">Reducer</mat-list-item>
-            <mat-list-item class="normalLink" routerLink="chapterContent/utilizingFeatureSelectors"  routerLinkActive="currentLink">Utilizing Feature Selectors</mat-list-item>
-            <mat-list-item class="normalLink" routerLink="chapterContent/effects"  routerLinkActive="currentLink">Effects</mat-list-item>
-            <mat-list-item class="normalLink" routerLink="chapterContent/devTools"  routerLinkActive="currentLink">Dev Tools</mat-list-item>
+
+  
+    <mat-list-item *ngFor="let chapter of chapterList" class="normalLink" routerLink="{{chapter.address}}" routerLinkActive="currentLink" >{{chapter.heading}}</mat-list-item>
+         
+          
         </mat-nav-list>
     </div>
 </div>

@@ -1,10 +1,10 @@
 <mat-drawer-container>
   
   <mat-drawer-content>
-   <app-side-menu class="sideMenuContainer"></app-side-menu> 
+   <app-side-menu class="sideMenuContainer" [chapterList]="chaptList$|async"></app-side-menu> 
    <div class="contentContainer">
      <app-header class=""></app-header>
-     <app-top-menu class="topMenuContainer"></app-top-menu>
+     <app-top-menu class="topMenuContainer" [chapterList]="chaptList$|async"></app-top-menu>
     <router-outlet></router-outlet>
    </div>
     
