@@ -17,26 +17,24 @@ import { StrongTypingComponent } from './strong-typing/strong-typing.component';
 import { UtilizingFeatureSelectorsComponent } from './utilizing-feature-selectors/utilizing-feature-selectors.component';
 
 const routes: Routes = [
-  { path: 'chapterContent',
-    redirectTo: 'chapterContent/introduction',
-    pathMatch: 'full'},
-  { path: 'chapterContent',
-    component: ChapterContentShellComponent,
+{path: 'chapterContent', redirectTo: 'chapterContent/introduction', pathMatch: 'full'},
+  { path: 'chapterContent', component: ChapterContentShellComponent,
     children: [
-  { path: 'introduction', component: IntroductionComponent },
-  { path: 'reduxPattern', component: ReduxPatternComponent },
-  { path: 'gettingStarted', component: GettingStartedComponent },
-  { path: 'immutableState', component: ImmutableStateComponent },
-  { path: 'initializeState', component: InitializeStateComponent },
-  { path: 'featureStateManagement', component: FeatureStateManagementComponent },
-  { path: 'strongTyping', component: StrongTypingComponent },
-  { path: 'creatingFeatureSelectors', component: CreatingSelectorsComponent },
-  { path: 'actions', component: ActionsComponent },
-  { path: 'dispatchingActions', component: DispatchingActionsComponent },
-  { path: 'reducer', component: ReducersComponent},
-  { path: 'utilizingFeatureSelectors', component: UtilizingFeatureSelectorsComponent },
-  { path: 'effects', component: EffectsComponent },
-  { path: 'devTools', component: DevtoolsComponent }
+      { path: '', redirectTo: 'chapterContent/introduction', pathMatch: 'full'},
+      { path: 'introduction', component: IntroductionComponent },
+      { path: 'reduxPattern', component: ReduxPatternComponent },
+      { path: 'gettingStarted', component: GettingStartedComponent },
+      { path: 'immutableState', component: ImmutableStateComponent },
+      { path: 'initializeState', component: InitializeStateComponent },
+      { path: 'featureStateManagement', component: FeatureStateManagementComponent },
+      { path: 'strongTyping', component: StrongTypingComponent },
+      { path: 'creatingFeatureSelectors', component: CreatingSelectorsComponent },
+      { path: 'actions', component: ActionsComponent },
+      { path: 'dispatchingActions', component: DispatchingActionsComponent },
+      { path: 'reducer', component: ReducersComponent},
+      { path: 'utilizingFeatureSelectors', component: UtilizingFeatureSelectorsComponent },
+      { path: 'effects', component: EffectsComponent },
+      { path: 'devTools', component: DevtoolsComponent }
   ]}
 ];
 
